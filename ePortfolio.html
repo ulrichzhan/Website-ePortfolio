@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Barre de Menu-->
+    <nav class="wrapper">
+        <header>
+            <ul>
+                <img src="img/Ecole des chômeurs.png" alt="logo de l'école des ch">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+            </ul>
+        </header>
+    </nav>
+    <!-- Introduction personnelle -->
+    <div class="intro">
+        <div class="gauche">
+            <img src="img/photo_of_me.png" class="img">
+        </div>
+        <div class="droite">
+            <h1>Ulrich ZHAN</h1>
+        <p>
+            Je suis actuellement en année de césure effectuant mon service civique ainsi que de l'autodidacte en langage de programmation.
+        </p>
+        </div>
+        
+    </div>
+    <!-- Formulaire à remplir -->
+    <form method="post" action="ePortfolio.html">
+        <h1>Formulaire</h1>
+        <div class="separation"></div>
+        <div class="corps-formulaire">
+            <div class="haut">
+                <div class="gauche">
+                    <div class="groupe">
+                        <label for="nom">Nom </label>
+                        <input type="name" id="nom" name="nom" required="name" >
+                    </div>
+                    <div class="groupe">
+                        <label for="prenom">Prénom </label>
+                        <input type="name" id="prenom" name="prenom" required="name" >
+                    </div>
+                </div>
+                <div class="droite">
+                    
+                    <div class="groupe">
+                        <label for="e-mail">Email </label>
+                        <input type="email" id="e-mail" name="mail" required="email" >
+                    </div>
+                    <div class="groupe">
+                        <label for="pass">Mot de passe </label>
+                        <input type="password" id="pass" name="password" required="password">
+                    </div>
+                </div>
+            </div>
+            <div class="bas">
+                <div class="gauche">   
+                    <div class="groupe">
+                        <fieldset>
+                            <legend>Contactez-nous</legend>
+                            <label><input id="proposition d'emploi" type="radio" value="proposition d'emploi">proposition d'emploi</label>
+                            <label><input id="entretien" type="radio" value="entretien">Entretien</label>
+                            <br>
+                            <label><input id="collaboration" type="radio" value="collaboration">collaboration</label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="droite">
+                    <div class="groupe">
+                        <label>Autres</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pied-formulaire">
+            <button>Envoyer</button>
+        </div>
+    </form>
+    <footer>
+        <p>No Copyright - Ecole des Chômeurs</p>
+    </footer>
+</body>
+</html>

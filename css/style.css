@@ -1,0 +1,322 @@
+body {
+  background-image: url("../img/grey.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Fonctions pour le header MENU */
+.wrapper {
+  /*margin:20px auto;
+  width: 768px;*/
+  border-bottom: 0.1px solid rgb(201, 201, 201);
+  background-color:white;
+  position:center;
+}
+
+header {
+  border-image-outset: 0px;
+}
+
+header img{
+  border: -10px auto;
+  width:auto;
+  height:100px;
+  position:absolute;
+  right:0;
+}
+
+header li {
+  font-size:20px;
+  border: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+  position:relative;
+}
+
+header li a{
+  text-decoration : none;
+  display:block;
+  padding:41px;
+}
+
+header li:hover a{
+  background-color:#4a9bf7;
+  color: white;
+}
+
+/*--------------------------------------*/
+
+
+/* Intro (nom, prénom, présentation) */
+
+.intro {
+  width: 500px;
+  height : auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:20px;
+  padding: 40px;
+  font-family:'Gill Sans MT';
+  color:black;
+}
+.intro .gauche img{
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-right:20px;
+  float:left;
+  width: 200px;
+  height:auto;
+}
+
+.intro .droite{
+  margin-top:20px;
+  margin-left:20px;
+}
+
+.intro .droite h1 {
+  font-size: 30px;
+  padding : 4px;
+  font-weight : bold;
+}
+.intro .droite p{
+  margin:10px;
+}
+
+/*--------------------------------------*/
+
+/* Formulaire (nom, prénom, email et mot de passe à rentrer */
+
+form {
+  width:488px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+
+  background-color: white;
+  border-radius: 10px;
+
+  padding:20px;
+  margin-bottom:40px;
+}
+
+form h1 {
+  font-size: 20px;
+  font-weight : bold;
+}
+
+form .separation {
+  width: 100%;
+  height: 1px;
+  background-color: #747cdf;
+  margin-top:20px;
+}
+
+form .corps-formulaire .haut {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form .corps-formulaire .bas {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+form .corps-formulaire .groupe {
+  position: relative; /* Pour mettre positionner l’élément dans le flux normal de la page */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+form .corps-formulaire .groupe input {
+  padding: 10px 38px 10px 30px;
+  border: 1px solid #c9c9c9;
+  outline-color: #747cdf;
+  border-radius: 5px;
+  width:auto;
+}
+
+form .corps-formulaire .droite {
+  margin-left: 10px;
+}
+
+form .corps-formulaire .bas .groupe textarea {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #f1f1f1;
+  border: 2px solid #747cdf;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 100%;
+  width:226px;
+}
+
+form .pied-formulaire button {
+  background-color: #747cdf;
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+form .pied-formulaire button:hover {
+  transform: scale(1.05);
+}
+
+/*--------------------------------------*/
+
+/* FOOTER */
+
+footer {
+  text-align:center;
+  background-color:black;
+  color:white;
+}
+
+/*--------------------------------------*/
+
+/* Media queries */
+
+@media (min-width:500px) and (min-height:840px){
+  footer{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+  }
+}
+
+@media (max-width:763px){
+  /*HEADER*/
+  header li{
+    font-size:9px;
+  }
+  
+  header li a{
+    padding:25px;
+  }
+
+  header img{
+    display:none;
+  }
+
+  /*INTRO*/
+  .intro{
+    text-align:center;
+    width:155px;
+  }
+
+  .intro .droite{
+    margin:0;
+  }
+
+  .intro .droite h1{
+    font-size:20px;
+  }
+
+  .intro .droite p{
+   font-size:10px;
+  }
+
+  .intro .gauche img {
+    float:none;
+    width:155px;
+    height:auto;
+    margin-left:0;
+  }
+
+  /*FORMULAIRE*/
+  form {
+    width:254px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+  
+    background-color: white;
+    border-radius: 10px;
+  
+    padding:20px;
+    margin-bottom:20px;
+  }
+  
+  form h1 {
+    font-size: 17px;
+    font-weight : bold;
+  }
+  
+  form .separation {
+    width: 100%;
+    height: 1px;
+    background-color: #747cdf;
+    margin-top:10px;
+  }
+  
+  form label{
+    font-size:12px;
+  }
+
+  form .corps-formulaire .haut {
+    flex-direction:column;
+  }
+  
+  form .corps-formulaire .bas {
+    flex-direction:column;
+  }
+
+  form .corps-formulaire .droite {
+    margin-left: 0;
+  }
+
+  form .corps-formulaire .groupe {
+    position: relative; /* Pour mettre positionner l’élément dans le flux normal de la page */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  form .corps-formulaire .groupe input {
+    padding: 5px 19px 5px 15px;
+    border: 1px solid #c9c9c9;
+    outline-color: #747cdf;
+    border-radius: 2.5px;
+    width:auto;
+  }
+  
+  form .corps-formulaire .bas .groupe textarea {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border: 2px solid #747cdf;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 100%;
+    width:236px;
+  }
+  
+  form .pied-formulaire button {
+    background-color: #747cdf;
+    color: white;
+    font-size: 12px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+  form .pied-formulaire button:hover {
+    transform: scale(1.05);
+  }
+
+  /*FOOTER*/
+  footer{
+    font-size:10px;
+  }
+}
